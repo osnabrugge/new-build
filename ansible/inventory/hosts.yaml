@@ -1,0 +1,25 @@
+---
+kubernetes:
+  children:
+    controllers:
+      hosts:
+        "k3s01":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.51"
+        "k3s02":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.52"
+        "k3s03":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.53"
+    workers:
+      hosts:
+        "k3s04":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.54"
+        "k3s05":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.55"
+        "k3s06":
+          ansible_user: "k3s"
+          ansible_host: "192.168.30.56"
